@@ -245,8 +245,10 @@
       <div class="container">
         <h2 class="text-h2 section__h2">Ответы на вопросы</h2>
         <div class="question__items">
-          <div class="question__item">
-            <h3 class="text-h3 question_h3 close">Работаете ли вы по 249ФЗ?</h3>
+          <details class="question__item">
+            <summary class="text-h3 question_h3">
+              Работаете ли вы по 249ФЗ?
+            </summary>
             <p class="text-p question_p">
               Lorem Ipsum - это текст-"рыба", часто используемый в печати и
               вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
@@ -254,9 +256,11 @@
               печатник создал большую коллекцию размеров и форм шрифтов,
               используя Lorem Ipsum для распечатки образцов.
             </p>
-          </div>
-          <div class="question__item">
-            <h3 class="text-h3 question_h3 open">Работаете ли вы по 249ФЗ?</h3>
+          </details>
+          <details open class="question__item">
+            <summary class="text-h3 question_h3">
+              Работаете ли вы по 249ФЗ?
+            </summary>
             <p class="text-p question_p">
               Lorem Ipsum - это текст-"рыба", часто используемый в печати и
               вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
@@ -264,9 +268,11 @@
               печатник создал большую коллекцию размеров и форм шрифтов,
               используя Lorem Ipsum для распечатки образцов.
             </p>
-          </div>
-          <div class="question__item">
-            <h3 class="text-h3 question_h3 close">Работаете ли вы по 249ФЗ?</h3>
+          </details>
+          <details class="question__item">
+            <summary class="text-h3 question_h3">
+              Работаете ли вы по 249ФЗ?
+            </summary>
             <p class="text-p question_p">
               Lorem Ipsum - это текст-"рыба", часто используемый в печати и
               вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
@@ -274,9 +280,11 @@
               печатник создал большую коллекцию размеров и форм шрифтов,
               используя Lorem Ipsum для распечатки образцов.
             </p>
-          </div>
-          <div class="question__item">
-            <h3 class="text-h3 question_h3 close">Работаете ли вы по 249ФЗ?</h3>
+          </details>
+          <details class="question__item">
+            <summary class="text-h3 question_h3">
+              Работаете ли вы по 249ФЗ?
+            </summary>
             <p class="text-p question_p">
               Lorem Ipsum - это текст-"рыба", часто используемый в печати и
               вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
@@ -284,7 +292,7 @@
               печатник создал большую коллекцию размеров и форм шрифтов,
               используя Lorem Ipsum для распечатки образцов.
             </p>
-          </div>
+          </details>
         </div>
       </div>
     </section>
@@ -409,8 +417,10 @@
             />
             <h3 class="text-h3 contact__text-grey">Телефон:</h3>
             <h3 class="text-h3 contacts__h3">
-              8 (812) 111-22-33<br> 
-              8 (812) 111-22-33
+              <a href="tel:+380676135660">
+                8 (812) 111-22-33<br />
+                8 (812) 111-22-33
+              </a>
             </h3>
           </div>
           <div class="contacts__grid-item">
@@ -421,7 +431,7 @@
             />
             <h3 class="text-h3 contact__text-grey">Время работы:</h3>
             <h3 class="text-h3 contacts__h3">
-              Пн-Сб<br>
+              Пн-Сб<br />
               10:00 - 20:00
             </h3>
           </div>
@@ -433,7 +443,7 @@
             />
             <h3 class="text-h3 contact__text-grey">E-Mail:</h3>
             <h3 class="text-h3 contacts__h3 col__red">
-              INFO@VIP.RU
+              <a href="mailto:login841@gmail.com">INFO@VIP.RU</a> 
             </h3>
           </div>
         </div>
@@ -448,4 +458,6 @@
       </div>
     </section>
   </body>
+  <!-- При использовании тега details / summary мы убираем в Стилях класс которы выводит "Стрелку" через фон! Как тогда "Стрелка" появляется и меняет направление отображения, если мы удалили фон "Стрелки" в css ?-->
+  <!-- Как изменить цвет svg иконки при наведении на текст в находящийся в одном блоке с иконкой? Иконка добавлена через тег "img" -->
 </html>
