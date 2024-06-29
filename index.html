@@ -10,18 +10,49 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap"
       rel="stylesheet"
     />
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <!-- <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection"/> -->
     <link rel="stylesheet" href="CSS/style.css" />
   </head>
   <body>
-    <header class="header">
+    <!-- Кнопка из библиотеки materialize -->
+    <ul id="slide-out" class="sidenav">
+      <li>
+        <a href="#header_link"
+          ><i class="material-icons">home</i>Главная страница</a
+        >
+      </li>
+      <li>
+        <a href="#reviews_link"><i class="material-icons">people</i>О Нас</a>
+      </li>
+      <li>
+        <a href="#services_link"><i class="material-icons">grade</i>Услуги</a>
+      </li>
+      <li>
+        <a href="#contacts_link"><i class="material-icons">phone</i>Контакты</a>
+      </li>
+      <li><div class="divider"></div></li>
+      <li>
+        <a href="#!" class="sidenav-close"
+          ><i class="material-icons">close</i>Закрыть</a
+        >
+      </li>
+    </ul>
+
+    <header class="header" id="header_link">
       <div class="container">
         <div class="header__title">
           <img src="img/logo.svg" alt="logo" class="logo" />
-          <button class="burger">
+          <a class="burger sidenav-trigger" data-target="slide-out">
             <span class="burger__line"></span>
             <span class="burger__line"></span>
             <span class="burger__line"></span>
-          </button>
+          </a>
         </div>
         <h1 class="h1">Реализуем крупнейшие проекты в Европе</h1>
         <h4 class="h4">Cтадионы, газопроводы, мосты, дамбы</h4>
@@ -104,6 +135,16 @@
       </div>
     </section>
 
+    <div id="modal2" class="modal">
+      <div class="modal-content">
+        <h4>Заголовок - 2</h4>
+        <p>
+          Далеко-далеко за словесными горами в стране гласных и согласных живут
+          рыбные тексты. Встретил жаренные даль, родного собрал которое раз.
+        </p>
+      </div>
+    </div>
+
     <section class="request">
       <div class="container">
         <div class="request__flex">
@@ -114,19 +155,19 @@
             </h5>
           </div>
           <div class="request__flex-right">
-            <button class="request__btn">
+            <a class="request__btn modal-trigger modal-trigger" href="#modal2">
               <img
                 src="img/icon-email.svg"
                 alt="Envelop"
                 class="request__icon"
               />
               Ваш запрос
-            </button>
+            </a>
           </div>
         </div>
       </div>
     </section>
-    <section class="services">
+    <section class="services" id="services_link">
       <div class="container">
         <h2 class="text-h2 section__h2">Чем мы занимаемся?</h2>
         <div class="services__grid">
@@ -185,56 +226,56 @@
       <div class="portfolio__grid">
         <div class="portfolio__grid-item">
           <img
-            class="portfolio-img"
+            class="portfolio-img materialboxed"
             src="img/Portfolio-img.jpg"
             alt="portfolio item"
           />
         </div>
         <div class="portfolio__grid-item">
           <img
-            class="portfolio-img"
+            class="portfolio-img materialboxed"
             src="img/Portfolio-img.jpg"
             alt="portfolio item"
           />
         </div>
         <div class="portfolio__grid-item">
           <img
-            class="portfolio-img"
+            class="portfolio-img materialboxed"
             src="img/Portfolio-img.jpg"
             alt="portfolio item"
           />
         </div>
         <div class="portfolio__grid-item">
           <img
-            class="portfolio-img"
+            class="portfolio-img materialboxed"
             src="img/Portfolio-img.jpg"
             alt="portfolio item"
           />
         </div>
         <div class="portfolio__grid-item">
           <img
-            class="portfolio-img"
+            class="portfolio-img materialboxed"
             src="img/Portfolio-img.jpg"
             alt="portfolio item"
           />
         </div>
         <div class="portfolio__grid-item">
           <img
-            class="portfolio-img"
+            class="portfolio-img materialboxed"
             src="img/Portfolio-img.jpg"
             alt="portfolio item"
           />
         </div>
         <div class="portfolio__grid-item">
           <img
-            class="portfolio-img"
+            class="portfolio-img materialboxed"
             src="img/Portfolio-img.jpg"
             alt="portfolio item"
           />
         </div>
         <div class="portfolio__grid-item">
           <img
-            class="portfolio-img"
+            class="portfolio-img materialboxed"
             src="img/Portfolio-img.jpg"
             alt="portfolio item"
           />
@@ -318,7 +359,7 @@
         </div>
       </div>
     </section>
-    <section class="reviews">
+    <section class="reviews" id="reviews_link">
       <div class="container">
         <h2 class="text-h2 reviews__h2">Отзывы о работе с нами</h2>
         <div class="reviews__grid">
@@ -373,6 +414,26 @@
         </div>
       </div>
     </section>
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h4>Заголовок</h4>
+        <p>
+          Далеко-далеко за словесными горами в стране гласных и согласных живут
+          рыбные тексты. Встретил жаренные даль, родного собрал которое раз.
+          Деревни буквоград он вопрос большой грустный на берегу, необходимыми
+          алфавит текстами домах собрал. Большой но парадигматическая
+          безорфографичный власти моей, коварных правилами свой, путь своих
+          продолжил коварный курсивных, своего сих безопасную несколько сбить.
+          Бросил толку парадигматическая своих страну прямо коварный, переписали
+          переулка ipsum жизни реторический моей запятых, вопрос путь языком
+          имени последний назад? Заглавных продолжил дороге подпоясал, всеми раз
+          его домах. Назад запятых если заголовок. Даль коварных курсивных
+          запятой парадигматическая семантика домах залетают лучше своих путь
+          образ это речью, взгляд, от всех переписывается меня гор все?
+        </p>
+      </div>
+    </div>
 
     <section class="request">
       <div class="container">
@@ -382,19 +443,19 @@
             <h5 class="request__h5">Оставьте заявку и мы свяжемся с вами!</h5>
           </div>
           <div class="request__flex-right">
-            <button class="request__btn">
+            <a class="request__btn modal-trigger modal-trigger" href="#modal1">
               <img
                 src="img/icon-email.svg"
                 alt="Envelop"
                 class="request__icon"
               />
               Ваш запрос
-            </button>
+            </a>
           </div>
         </div>
       </div>
     </section>
-    <section class="contacts">
+    <section class="contacts" id="contacts_link">
       <div class="container">
         <h2 class="text-h2 contacts__h2">Контакты</h2>
         <div class="contacts__grid">
@@ -443,7 +504,7 @@
             />
             <h3 class="text-h3 contact__text-grey">E-Mail:</h3>
             <h3 class="text-h3 contacts__h3 col__red">
-              <a href="mailto:login841@gmail.com">INFO@VIP.RU</a> 
+              <a href="mailto:login841@gmail.com">INFO@VIP.RU</a>
             </h3>
           </div>
         </div>
@@ -457,7 +518,8 @@
         </div>
       </div>
     </section>
+
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
   </body>
-  <!-- При использовании тега details / summary мы убираем в Стилях класс которы выводит "Стрелку" через фон! Как тогда "Стрелка" появляется и меняет направление отображения, если мы удалили фон "Стрелки" в css ?-->
-  <!-- Как изменить цвет svg иконки при наведении на текст в находящийся в одном блоке с иконкой? Иконка добавлена через тег "img" -->
 </html>
